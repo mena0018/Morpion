@@ -1,0 +1,45 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #03224C, #301934);
+    color: #d8dfe3;
+}
+
+h1,h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #d8dfe3;
+    margin: 50px auto 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #d8dfe3;
+    margin: 50px auto 0;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(3,100px) / repeat(3,100px);
+    width: 300px;
+    height: 300px;
+    margin: 50px auto
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    color: #cecece;
+    cursor: pointer;
+    border: 1px solid #cecece;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
