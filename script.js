@@ -56,8 +56,6 @@ function validationResultats() {
       }
   }
 
-  changementDeJoueur();
-
   if (finDePartie) {
     info.innerText = `Le joueur ${joueurEnCours} a gagné`;
     verrouillage = false;
@@ -72,6 +70,8 @@ function validationResultats() {
       verrouillage = false;
       return;
   }
+
+  changementDeJoueur();
 }
 
 function changementDeJoueur() {
