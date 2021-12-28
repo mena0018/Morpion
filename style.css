@@ -5,23 +5,24 @@
 }
 
 body {
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-family: Ubuntu, Arial, sans-serif;
     background: linear-gradient(to right, #03224C, #301934);
     color: #d8dfe3;
 }
 
-h1 {
+h1, h2 {
+    font-family: Ubuntu, sans-serif;
     text-align: center;
     font-size: 50px;
     color: #d8dfe3;
     margin: 50px auto 0;
+    text-shadow:0 0 20px #03224C,
+    2px 3px 3px #301934, 0 0 100px #8c7fd6;
+    color:#d8dfe3;
 }
 
 h2 {
-    text-align: center;
     font-size: 35px;
-    color: #d8dfe3;
-    margin: 50px auto 0;
 }
 
 .container {
