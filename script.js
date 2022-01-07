@@ -1,5 +1,6 @@
 const info = document.querySelector('.info');
 const cellules = document.querySelectorAll('.cell');
+const button = document.querySelector('button');
 
 let verrouillage = true;
 let joueurEnCours = "X";
@@ -77,4 +78,10 @@ function validationResultats() {
 function changementDeJoueur() {
     joueurEnCours = joueurEnCours === "X" ? "O" : "X";
     info.innerText = `Au tour de ${joueurEnCours}`;
+}
+
+
+button.addEventListener('click', rejouer);
+function rejouer() {
+  location.reload();
 }
